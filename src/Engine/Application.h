@@ -5,6 +5,8 @@
 
 namespace Nova
 {
+    class Rectangle;
+
     class Application{
         public:
         Application();
@@ -21,5 +23,7 @@ namespace Nova
         bool m_Running = false;
 
         EngineTime m_Time;
+
+        Rectangle* m_Rectangle = nullptr;
     };
 }

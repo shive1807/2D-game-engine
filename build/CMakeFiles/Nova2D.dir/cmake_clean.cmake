@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Nova2D.dir/src/Engine/Application.cpp.o.d"
   "CMakeFiles/Nova2D.dir/src/Engine/Input.cpp.o"
   "CMakeFiles/Nova2D.dir/src/Engine/Input.cpp.o.d"
+  "CMakeFiles/Nova2D.dir/src/Engine/Rectangle.cpp.o"
+  "CMakeFiles/Nova2D.dir/src/Engine/Rectangle.cpp.o.d"
   "CMakeFiles/Nova2D.dir/src/Engine/Renderer.cpp.o"
   "CMakeFiles/Nova2D.dir/src/Engine/Renderer.cpp.o.d"
   "CMakeFiles/Nova2D.dir/src/Engine/Shader.cpp.o"

@@ -238,6 +238,30 @@ src/Engine/Input.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Input.cpp.s
 .PHONY : src/Engine/Input.cpp.s
 
+src/Engine/Rectangle.o: src/Engine/Rectangle.cpp.o
+.PHONY : src/Engine/Rectangle.o
+
+# target to build an object file
+src/Engine/Rectangle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Rectangle.cpp.o
+.PHONY : src/Engine/Rectangle.cpp.o
+
+src/Engine/Rectangle.i: src/Engine/Rectangle.cpp.i
+.PHONY : src/Engine/Rectangle.i
+
+# target to preprocess a source file
+src/Engine/Rectangle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Rectangle.cpp.i
+.PHONY : src/Engine/Rectangle.cpp.i
+
+src/Engine/Rectangle.s: src/Engine/Rectangle.cpp.s
+.PHONY : src/Engine/Rectangle.s
+
+# target to generate assembly for a file
+src/Engine/Rectangle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Rectangle.cpp.s
+.PHONY : src/Engine/Rectangle.cpp.s
+
 src/Engine/Renderer.o: src/Engine/Renderer.cpp.o
 .PHONY : src/Engine/Renderer.o
 
@@ -308,6 +332,9 @@ help:
 	@echo "... src/Engine/Input.o"
 	@echo "... src/Engine/Input.i"
 	@echo "... src/Engine/Input.s"
+	@echo "... src/Engine/Rectangle.o"
+	@echo "... src/Engine/Rectangle.i"
+	@echo "... src/Engine/Rectangle.s"
 	@echo "... src/Engine/Renderer.o"
 	@echo "... src/Engine/Renderer.i"
 	@echo "... src/Engine/Renderer.s"

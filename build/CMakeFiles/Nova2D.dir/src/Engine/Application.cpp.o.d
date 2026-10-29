@@ -1014,6 +1014,8 @@ CMakeFiles/Nova2D.dir/src/Engine/Application.cpp.o: \
   /opt/homebrew/include/GLFW/glfw3.h \
   /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Input.h \
   /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Renderer.h \
+  /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Rectangle.h \
+  /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Shader.h \
   /Users/shivambhati/Documents/GitHub/2D-game-engine/external/glad/include/glad/gl.h \
   /Users/shivambhati/Documents/GitHub/2D-game-engine/external/glad/include/KHR/khrplatform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream

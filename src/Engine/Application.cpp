@@ -1,6 +1,7 @@
 #include<Application.h>
 #include "Input.h"
 #include "Renderer.h"
+#include "Rectangle.h"
 #include <glad/gl.h>
 #include<iostream>
 
@@ -37,6 +38,7 @@ namespace Nova{
             std::cerr << "Failed to initialize GLAD!" << std::endl;
             return false;
         }
+        m_Rectangle = new Rectangle();
         
         glfwSwapInterval(1);
 
@@ -89,13 +91,30 @@ namespace Nova{
         //game logic will go here
     }
 
-    void Application::Render(){
-        Renderer::Clear(0.10f, 0.10f, 0.15f, 1.0f);
-        
-    }
+    // void Application::Render(){
+    //     Renderer::Clear(0.10f, 0.10f, 0.15f, 1.0f);
+    //     if (m_Rectangle != nullptr){
+    //         m_Rectangle->Draw();
+    //     }
+    // }
 
+    void Application::Render()
+    {
+        Renderer::Clear(0.10f, 0.10f, 0.15f, 1.0f);
+
+        glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT);
+
+        if (m_Rectangle != nullptr)
+        {
+            m_Rectangle->Draw();
+        }
+    }
+    
     void Application::Shutdown(){
         if(m_window != nullptr){
+            delete m_Rectangle;
+            m_Rectangle = nullptr;
             glfwDestroyWindow(m_window);
             m_window = nullptr;
             glfwTerminate();
