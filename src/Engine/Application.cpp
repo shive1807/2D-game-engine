@@ -1,5 +1,6 @@
 #include<Application.h>
 #include "Input.h"
+#include "Renderer.h"
 #include<iostream>
 
 namespace Nova{
@@ -81,8 +82,7 @@ namespace Nova{
     }
 
     void Application::Render(){
-        glClearColor(0.10f, 0.12f, 0.16f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
+        Renderer::Clear(0.10f, 0.10f, 0.15f, 1.0f);
     }
 
     void Application::Shutdown(){
