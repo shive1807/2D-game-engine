@@ -16,6 +16,12 @@ find_package(OpenGL REQUIRED)
 # Create the engine executable
 add_executable(Nova2D
     main.cpp
+    src/Engine/Application.cpp
+)
+
+target_include_directories(Nova2D PRIVATE
+    src
+    src/Engine
 )
 
 # Link GLFW

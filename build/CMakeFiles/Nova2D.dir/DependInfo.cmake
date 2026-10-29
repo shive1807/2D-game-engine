@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/shivambhati/Documents/GitHub/2D-game-engine/main.cpp" "CMakeFiles/Nova2D.dir/main.cpp.o" "gcc" "CMakeFiles/Nova2D.dir/main.cpp.o.d"
+  "/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Application.cpp" "CMakeFiles/Nova2D.dir/src/Engine/Application.cpp.o" "gcc" "CMakeFiles/Nova2D.dir/src/Engine/Application.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
