@@ -1,9 +1,10 @@
 #pragma once
-#include<string>
 
-namespace Nova{
-    class Shader{
-        public: 
+namespace Nova
+{
+    class Shader
+    {
+    public:
         Shader(const char* vertexSource, const char* fragmentSource);
         ~Shader();
 
@@ -13,7 +14,7 @@ namespace Nova{
         void Bind() const;
         void UnBind() const;
 
-        private:
+    private:
         unsigned int m_RendererID = 0;
     };
 }

@@ -8,9 +8,11 @@
             "includePath": [
                 "${workspaceFolder}/src/**",
                 "/opt/homebrew/opt/glfw/include"
+            ],
+            "compileCommands": [
+                "${workspaceFolder}/build/compile_commands.json"
             ]
         }
-
     ],
     "version": 4
 }

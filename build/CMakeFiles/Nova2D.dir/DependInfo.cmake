@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Application.cpp" "CMakeFiles/Nova2D.dir/src/Engine/Application.cpp.o" "gcc" "CMakeFiles/Nova2D.dir/src/Engine/Application.cpp.o.d"
   "/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Input.cpp" "CMakeFiles/Nova2D.dir/src/Engine/Input.cpp.o" "gcc" "CMakeFiles/Nova2D.dir/src/Engine/Input.cpp.o.d"
   "/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Renderer.cpp" "CMakeFiles/Nova2D.dir/src/Engine/Renderer.cpp.o" "gcc" "CMakeFiles/Nova2D.dir/src/Engine/Renderer.cpp.o.d"
+  "/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Shader.cpp" "CMakeFiles/Nova2D.dir/src/Engine/Shader.cpp.o" "gcc" "CMakeFiles/Nova2D.dir/src/Engine/Shader.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

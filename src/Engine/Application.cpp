@@ -1,6 +1,7 @@
 #include<Application.h>
 #include "Input.h"
 #include "Renderer.h"
+#include <glad/gl.h>
 #include<iostream>
 
 namespace Nova{
@@ -30,6 +31,13 @@ namespace Nova{
         }
 
         glfwMakeContextCurrent(m_window);
+
+        if (!gladLoadGL((GLADloadfunc)glfwGetProcAddress))
+        {
+            std::cerr << "Failed to initialize GLAD!" << std::endl;
+            return false;
+        }
+        
         glfwSwapInterval(1);
 
         m_Running = true;

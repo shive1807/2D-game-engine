@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Nova2D.dir/src/Engine/Input.cpp.o.d"
   "CMakeFiles/Nova2D.dir/src/Engine/Renderer.cpp.o"
   "CMakeFiles/Nova2D.dir/src/Engine/Renderer.cpp.o.d"
+  "CMakeFiles/Nova2D.dir/src/Engine/Shader.cpp.o"
+  "CMakeFiles/Nova2D.dir/src/Engine/Shader.cpp.o.d"
   "Nova2D"
   "Nova2D.pdb"
 )

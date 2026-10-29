@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named glad
+
+# Build rule for target.
+glad: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glad
+.PHONY : glad
+
+# fast build rule for target.
+glad/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/build
+.PHONY : glad/fast
+
+#=============================================================================
 # Target rules for targets named Nova2D
 
 # Build rule for target.
@@ -128,6 +141,30 @@ Nova2D: cmake_check_build_system
 Nova2D/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/build
 .PHONY : Nova2D/fast
+
+external/glad/src/gl.o: external/glad/src/gl.c.o
+.PHONY : external/glad/src/gl.o
+
+# target to build an object file
+external/glad/src/gl.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/external/glad/src/gl.c.o
+.PHONY : external/glad/src/gl.c.o
+
+external/glad/src/gl.i: external/glad/src/gl.c.i
+.PHONY : external/glad/src/gl.i
+
+# target to preprocess a source file
+external/glad/src/gl.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/external/glad/src/gl.c.i
+.PHONY : external/glad/src/gl.c.i
+
+external/glad/src/gl.s: external/glad/src/gl.c.s
+.PHONY : external/glad/src/gl.s
+
+# target to generate assembly for a file
+external/glad/src/gl.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/external/glad/src/gl.c.s
+.PHONY : external/glad/src/gl.c.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -225,6 +262,30 @@ src/Engine/Renderer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Renderer.cpp.s
 .PHONY : src/Engine/Renderer.cpp.s
 
+src/Engine/Shader.o: src/Engine/Shader.cpp.o
+.PHONY : src/Engine/Shader.o
+
+# target to build an object file
+src/Engine/Shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Shader.cpp.o
+.PHONY : src/Engine/Shader.cpp.o
+
+src/Engine/Shader.i: src/Engine/Shader.cpp.i
+.PHONY : src/Engine/Shader.i
+
+# target to preprocess a source file
+src/Engine/Shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Shader.cpp.i
+.PHONY : src/Engine/Shader.cpp.i
+
+src/Engine/Shader.s: src/Engine/Shader.cpp.s
+.PHONY : src/Engine/Shader.s
+
+# target to generate assembly for a file
+src/Engine/Shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Shader.cpp.s
+.PHONY : src/Engine/Shader.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -234,6 +295,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Nova2D"
+	@echo "... glad"
+	@echo "... external/glad/src/gl.o"
+	@echo "... external/glad/src/gl.i"
+	@echo "... external/glad/src/gl.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -246,6 +311,9 @@ help:
 	@echo "... src/Engine/Renderer.o"
 	@echo "... src/Engine/Renderer.i"
 	@echo "... src/Engine/Renderer.s"
+	@echo "... src/Engine/Shader.o"
+	@echo "... src/Engine/Shader.i"
+	@echo "... src/Engine/Shader.s"
 .PHONY : help
 
 

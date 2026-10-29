@@ -1,26 +1,38 @@
 [
 {
   "directory": "/Users/shivambhati/Documents/GitHub/2D-game-engine/build",
-  "command": "/usr/bin/c++  -I/Users/shivambhati/Documents/GitHub/2D-game-engine/src -I/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine -isystem /opt/homebrew/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -std=c++20 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/Nova2D.dir/main.cpp.o -c /Users/shivambhati/Documents/GitHub/2D-game-engine/main.cpp",
+  "command": "/usr/bin/cc  -I/Users/shivambhati/Documents/GitHub/2D-game-engine/external/glad/include  -arch arm64 -o CMakeFiles/glad.dir/external/glad/src/gl.c.o -c /Users/shivambhati/Documents/GitHub/2D-game-engine/external/glad/src/gl.c",
+  "file": "/Users/shivambhati/Documents/GitHub/2D-game-engine/external/glad/src/gl.c",
+  "output": "CMakeFiles/glad.dir/external/glad/src/gl.c.o"
+},
+{
+  "directory": "/Users/shivambhati/Documents/GitHub/2D-game-engine/build",
+  "command": "/usr/bin/c++  -I/Users/shivambhati/Documents/GitHub/2D-game-engine/src -I/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine -I/Users/shivambhati/Documents/GitHub/2D-game-engine/external/glad/include -isystem /opt/homebrew/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -std=c++20 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/Nova2D.dir/main.cpp.o -c /Users/shivambhati/Documents/GitHub/2D-game-engine/main.cpp",
   "file": "/Users/shivambhati/Documents/GitHub/2D-game-engine/main.cpp",
   "output": "CMakeFiles/Nova2D.dir/main.cpp.o"
 },
 {
   "directory": "/Users/shivambhati/Documents/GitHub/2D-game-engine/build",
-  "command": "/usr/bin/c++  -I/Users/shivambhati/Documents/GitHub/2D-game-engine/src -I/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine -isystem /opt/homebrew/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -std=c++20 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/Nova2D.dir/src/Engine/Application.cpp.o -c /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Application.cpp",
+  "command": "/usr/bin/c++  -I/Users/shivambhati/Documents/GitHub/2D-game-engine/src -I/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine -I/Users/shivambhati/Documents/GitHub/2D-game-engine/external/glad/include -isystem /opt/homebrew/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -std=c++20 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/Nova2D.dir/src/Engine/Application.cpp.o -c /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Application.cpp",
   "file": "/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Application.cpp",
   "output": "CMakeFiles/Nova2D.dir/src/Engine/Application.cpp.o"
 },
 {
   "directory": "/Users/shivambhati/Documents/GitHub/2D-game-engine/build",
-  "command": "/usr/bin/c++  -I/Users/shivambhati/Documents/GitHub/2D-game-engine/src -I/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine -isystem /opt/homebrew/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -std=c++20 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/Nova2D.dir/src/Engine/Input.cpp.o -c /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Input.cpp",
+  "command": "/usr/bin/c++  -I/Users/shivambhati/Documents/GitHub/2D-game-engine/src -I/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine -I/Users/shivambhati/Documents/GitHub/2D-game-engine/external/glad/include -isystem /opt/homebrew/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -std=c++20 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/Nova2D.dir/src/Engine/Input.cpp.o -c /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Input.cpp",
   "file": "/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Input.cpp",
   "output": "CMakeFiles/Nova2D.dir/src/Engine/Input.cpp.o"
 },
 {
   "directory": "/Users/shivambhati/Documents/GitHub/2D-game-engine/build",
-  "command": "/usr/bin/c++  -I/Users/shivambhati/Documents/GitHub/2D-game-engine/src -I/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine -isystem /opt/homebrew/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -std=c++20 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/Nova2D.dir/src/Engine/Renderer.cpp.o -c /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Renderer.cpp",
+  "command": "/usr/bin/c++  -I/Users/shivambhati/Documents/GitHub/2D-game-engine/src -I/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine -I/Users/shivambhati/Documents/GitHub/2D-game-engine/external/glad/include -isystem /opt/homebrew/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -std=c++20 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/Nova2D.dir/src/Engine/Renderer.cpp.o -c /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Renderer.cpp",
   "file": "/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Renderer.cpp",
   "output": "CMakeFiles/Nova2D.dir/src/Engine/Renderer.cpp.o"
+},
+{
+  "directory": "/Users/shivambhati/Documents/GitHub/2D-game-engine/build",
+  "command": "/usr/bin/c++  -I/Users/shivambhati/Documents/GitHub/2D-game-engine/src -I/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine -I/Users/shivambhati/Documents/GitHub/2D-game-engine/external/glad/include -isystem /opt/homebrew/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -std=c++20 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/Nova2D.dir/src/Engine/Shader.cpp.o -c /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Shader.cpp",
+  "file": "/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Shader.cpp",
+  "output": "CMakeFiles/Nova2D.dir/src/Engine/Shader.cpp.o"
 }
 ]

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/shivambhati/Documents/GitHub/2D-game-engine/src -I/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine -isystem /opt/homebrew/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
+CXX_INCLUDES = -I/Users/shivambhati/Documents/GitHub/2D-game-engine/src -I/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine -I/Users/shivambhati/Documents/GitHub/2D-game-engine/external/glad/include -isystem /opt/homebrew/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
 
 CXX_FLAGSarm64 = -std=c++20 -arch arm64 -Wall -Wextra -Wpedantic
 
