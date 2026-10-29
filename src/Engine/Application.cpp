@@ -83,6 +83,7 @@ namespace Nova{
 
     void Application::Render(){
         Renderer::Clear(0.10f, 0.10f, 0.15f, 1.0f);
+        
     }
 
     void Application::Shutdown(){
