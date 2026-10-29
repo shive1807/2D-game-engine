@@ -67,4 +67,8 @@ namespace Nova{
     void Shader::UnBind() const{
         glUseProgram(0);
     }
+
+    unsigned int Shader::GetRendererID() const{
+        return m_RendererID;
+    }
 }

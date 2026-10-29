@@ -39,6 +39,7 @@ namespace Nova{
             return false;
         }
         m_Rectangle = new Rectangle();
+        m_Rectangle->SetPosition(0.5f, 0.0f);
         
         glfwSwapInterval(1);
 
@@ -110,7 +111,7 @@ namespace Nova{
             m_Rectangle->Draw();
         }
     }
-    
+
     void Application::Shutdown(){
         if(m_window != nullptr){
             delete m_Rectangle;

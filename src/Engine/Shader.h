@@ -14,6 +14,8 @@ namespace Nova
         void Bind() const;
         void UnBind() const;
 
+        unsigned int GetRendererID() const;
+        
     private:
         unsigned int m_RendererID = 0;
     };

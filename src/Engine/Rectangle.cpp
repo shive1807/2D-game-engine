@@ -6,9 +6,12 @@ namespace Nova{
     Rectangle::Rectangle(){
         const char* vertexSource = R"(#version 330 core
             layout (location = 0) in vec2 a_Position;
+            
+            uniform vec2 u_Position;
+            
             void main()
             {
-                gl_Position = vec4(a_Position, 0.0, 1.0);
+                gl_Position = vec4(a_Position + u_Position, 0.0, 1.0);
             }
         )";
 
@@ -61,10 +64,18 @@ namespace Nova{
     void Rectangle::Draw() const{
         m_Shader->Bind();
 
+        GLint positionLocation = glGetUniformLocation(m_Shader->GetRendererID(), "u_Position");
+        glUniform2f(positionLocation, m_PositionX, m_PositionY);
+
         glBindVertexArray(m_VAO);
         glDrawArrays(GL_TRIANGLES, 0, 6);
         glBindVertexArray(0);
 
         m_Shader->UnBind();
+    }
+
+    void Rectangle::SetPosition(float x, float y){
+        m_PositionX = x;
+        m_PositionY = y;
     }
 }
