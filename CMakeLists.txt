@@ -17,6 +17,7 @@ find_package(OpenGL REQUIRED)
 add_executable(Nova2D
     main.cpp
     src/Engine/Application.cpp
+    src/Engine/Input.cpp
 )
 
 target_include_directories(Nova2D PRIVATE

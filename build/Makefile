@@ -177,6 +177,30 @@ src/Engine/Application.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Application.cpp.s
 .PHONY : src/Engine/Application.cpp.s
 
+src/Engine/Input.o: src/Engine/Input.cpp.o
+.PHONY : src/Engine/Input.o
+
+# target to build an object file
+src/Engine/Input.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Input.cpp.o
+.PHONY : src/Engine/Input.cpp.o
+
+src/Engine/Input.i: src/Engine/Input.cpp.i
+.PHONY : src/Engine/Input.i
+
+# target to preprocess a source file
+src/Engine/Input.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Input.cpp.i
+.PHONY : src/Engine/Input.cpp.i
+
+src/Engine/Input.s: src/Engine/Input.cpp.s
+.PHONY : src/Engine/Input.s
+
+# target to generate assembly for a file
+src/Engine/Input.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Input.cpp.s
+.PHONY : src/Engine/Input.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +216,9 @@ help:
 	@echo "... src/Engine/Application.o"
 	@echo "... src/Engine/Application.i"
 	@echo "... src/Engine/Application.s"
+	@echo "... src/Engine/Input.o"
+	@echo "... src/Engine/Input.i"
+	@echo "... src/Engine/Input.s"
 .PHONY : help
 
 

@@ -1,4 +1,5 @@
 #include<Application.h>
+#include "Input.h"
 #include<iostream>
 
 namespace Nova{
@@ -32,6 +33,9 @@ namespace Nova{
 
         m_Running = true;
 
+        //Input system
+        Input::Initialize(m_window);
+
         std::cout << "Nova2D initialized successfully!\n";
         return true;
     }
@@ -45,10 +49,15 @@ namespace Nova{
 
         while(m_Running && !glfwWindowShouldClose(m_window)){
             glfwPollEvents();
+            
+            Input::Update();
+            
             m_Time.Tick();
             const float deltaTime = m_Time.GetDeltaTime();
+            
             Update(deltaTime);
             Render();
+            
             glfwSwapBuffers(m_window);
         }
     }
