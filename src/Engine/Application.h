@@ -1,5 +1,5 @@
 #pragma once
-
+#include "EngineTime.h"
 #include <GLFW/glfw3.h>
 
 namespace Nova
@@ -12,11 +12,13 @@ namespace Nova
 
         private:
         bool Initialize();
-        void Update();
+        void Update(float deltaTime);
         void Render();
         void Shutdown();
 
         GLFWwindow* m_window = nullptr;
         bool m_Running = false;
+
+        EngineTime m_Time;
     };
 }

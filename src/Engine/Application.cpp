@@ -41,15 +41,33 @@ namespace Nova{
             return;
         }
 
+        m_Time.Reset();
+
         while(m_Running && !glfwWindowShouldClose(m_window)){
             glfwPollEvents();
-            Update();
+            m_Time.Tick();
+            const float deltaTime = m_Time.GetDeltaTime();
+            Update(deltaTime);
             Render();
             glfwSwapBuffers(m_window);
         }
     }
 
-    void Application::Update(){
+    void Application::Update(float deltaTime){
+        static float printTimer = 0.0f;
+
+        printTimer += deltaTime;
+
+        if (printTimer >= 1.0f)
+        {
+            std::cout
+                << "Elapsed: " << m_Time.GetElapsedTime()
+                << " s | Delta: " << deltaTime
+                << " s | FPS: " << 1.0f / deltaTime
+                << '\n';
+
+            printTimer = 0.0f;
+        }
         //game logic will go here
     }
 
