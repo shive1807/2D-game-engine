@@ -8,10 +8,24 @@ namespace Nova{
             layout (location = 0) in vec2 a_Position;
             
             uniform vec2 u_Position;
-            
+            uniform float u_Rotation;
+            uniform vec2 u_Scale;
+
             void main()
             {
-                gl_Position = vec4(a_Position + u_Position, 0.0, 1.0);
+
+                vec2 scaledPosition = a_Position * u_Scale;
+
+                float c = cos(radians(u_Rotation));
+                float s = sin(radians(u_Rotation));
+
+                mat2 rotation = mat2(
+                    c, s,
+                    -s, c
+                );
+                vec2 rotatedPosition = rotation * scaledPosition;
+            
+                gl_Position = vec4(rotatedPosition + u_Position, 0.0, 1.0);
             }
         )";
 
@@ -63,9 +77,15 @@ namespace Nova{
 
     void Rectangle::Draw() const{
         m_Shader->Bind();
+        GLint program = static_cast<GLint>(m_Shader->GetRendererID());
 
-        GLint positionLocation = glGetUniformLocation(m_Shader->GetRendererID(), "u_Position");
-        glUniform2f(positionLocation, m_PositionX, m_PositionY);
+        GLint positionLocation = glGetUniformLocation(program, "u_Position");
+        GLint rotationLocation = glGetUniformLocation(program, "u_Rotation");
+        GLint scaleLocation = glGetUniformLocation(program, "u_Scale");
+
+        glUniform2f(positionLocation, m_Transform.GetPositionX(), m_Transform.GetPositionY());
+        glUniform1f(rotationLocation, m_Transform.GetRotation());
+        glUniform2f(scaleLocation, m_Transform.GetScaleX(), m_Transform.GetScaleY());
 
         glBindVertexArray(m_VAO);
         glDrawArrays(GL_TRIANGLES, 0, 6);
@@ -75,7 +95,16 @@ namespace Nova{
     }
 
     void Rectangle::SetPosition(float x, float y){
-        m_PositionX = x;
-        m_PositionY = y;
+        m_Transform.SetPosition(x, y);
+    }
+
+    void Rectangle::SetRotation(float degrees)
+    {
+        m_Transform.SetRotation(degrees);
+    }
+
+    void Rectangle::SetScale(float x, float y)
+    {
+        m_Transform.SetScale(x, y);
     }
 }

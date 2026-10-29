@@ -40,6 +40,8 @@ namespace Nova{
         }
         m_Rectangle = new Rectangle();
         m_Rectangle->SetPosition(0.5f, 0.0f);
+        m_Rectangle->SetRotation(45.0f);
+        m_Rectangle->SetScale(0.5f, 1.0f);
         
         glfwSwapInterval(1);
 

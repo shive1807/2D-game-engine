@@ -310,6 +310,30 @@ src/Engine/Shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Shader.cpp.s
 .PHONY : src/Engine/Shader.cpp.s
 
+src/Engine/Transform.o: src/Engine/Transform.cpp.o
+.PHONY : src/Engine/Transform.o
+
+# target to build an object file
+src/Engine/Transform.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Transform.cpp.o
+.PHONY : src/Engine/Transform.cpp.o
+
+src/Engine/Transform.i: src/Engine/Transform.cpp.i
+.PHONY : src/Engine/Transform.i
+
+# target to preprocess a source file
+src/Engine/Transform.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Transform.cpp.i
+.PHONY : src/Engine/Transform.cpp.i
+
+src/Engine/Transform.s: src/Engine/Transform.cpp.s
+.PHONY : src/Engine/Transform.s
+
+# target to generate assembly for a file
+src/Engine/Transform.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Transform.cpp.s
+.PHONY : src/Engine/Transform.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -341,6 +365,9 @@ help:
 	@echo "... src/Engine/Shader.o"
 	@echo "... src/Engine/Shader.i"
 	@echo "... src/Engine/Shader.s"
+	@echo "... src/Engine/Transform.o"
+	@echo "... src/Engine/Transform.i"
+	@echo "... src/Engine/Transform.s"
 .PHONY : help
 
 
