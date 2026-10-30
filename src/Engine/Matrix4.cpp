@@ -74,4 +74,25 @@ namespace Nova {
 
         return result;
     }
+
+    //The purpose is to map the camera's visible coordinates into OpenGL's clip-space range
+    Matrix4 Matrix4::Orthographic(
+        float left, 
+        float right, 
+        float bottom, 
+        float top, 
+        float nearPlane,
+        float farPlane
+    ){
+        Matrix4 result = Identity();
+
+        result(0, 0) = 2.0f / (right - left);
+        result(1, 1) = 2.0f / (top - bottom);
+        result(2, 2) = -2.0f / (farPlane - nearPlane);
+        result(0, 3) = -(right + left) / (right - left);
+        result(1, 3) = -(top + bottom) / (top - bottom);
+        result(2, 3) = -(farPlane + nearPlane) / (farPlane - nearPlane);
+        
+        return result;
+    }
 }

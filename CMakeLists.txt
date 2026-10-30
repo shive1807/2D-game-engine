@@ -56,3 +56,13 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "Clang|GNU")
         -Wpedantic
     )
 endif()
+
+# tests
+add_executable(Matrix4Test
+    tests/Matrix4Test.cpp
+    src/Engine/Matrix4.cpp
+)
+
+target_include_directories(Matrix4Test PRIVATE
+    src/Engine
+)

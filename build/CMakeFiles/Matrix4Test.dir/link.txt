@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/Matrix4Test.dir/tests/Matrix4Test.cpp.o CMakeFiles/Matrix4Test.dir/src/Engine/Matrix4.cpp.o -o Matrix4Test

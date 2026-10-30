@@ -2097,6 +2097,9 @@ CMakeFiles/Nova2D.dir/src/Engine/Input.cpp.o: /Users/shivambhati/Documents/GitHu
   /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Input.h \
   /opt/homebrew/include/GLFW/glfw3.h
 
+CMakeFiles/Nova2D.dir/src/Engine/Matrix4.cpp.o: /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Matrix4.cpp \
+  /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Matrix4.h
+
 CMakeFiles/Nova2D.dir/src/Engine/Rectangle.cpp.o: /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Rectangle.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_types/_intmax_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_types/_uint16_t.h \
@@ -3177,6 +3180,8 @@ CMakeFiles/Nova2D.dir/src/Engine/Transform.cpp.o: /Users/shivambhati/Documents/G
 /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Renderer.cpp:
 
 /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Rectangle.cpp:
+
+/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Matrix4.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gltypes.h:
 
@@ -4843,6 +4848,8 @@ CMakeFiles/Nova2D.dir/src/Engine/Transform.cpp.o: /Users/shivambhati/Documents/G
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_search.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/from_chars_floating_point.h:
+
+/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Matrix4.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_replace.h:
 

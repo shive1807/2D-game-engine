@@ -72,4 +72,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/glad.dir/DependInfo.cmake"
   "CMakeFiles/Nova2D.dir/DependInfo.cmake"
+  "CMakeFiles/Matrix4Test.dir/DependInfo.cmake"
   )

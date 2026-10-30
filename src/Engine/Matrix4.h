@@ -20,6 +20,15 @@ namespace Nova {
         static Matrix4 RotationZ(float degrees);
         static Matrix4 Scale(float x, float y, float z);
 
+        static Matrix4 Orthographic(
+            float left, 
+            float right, 
+            float bottom, 
+            float top, 
+            float nearPlane,
+            float farPlane
+        );
+        
     private:
         float m_Data[16];
     };

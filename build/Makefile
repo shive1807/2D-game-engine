@@ -142,6 +142,19 @@ Nova2D/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/build
 .PHONY : Nova2D/fast
 
+#=============================================================================
+# Target rules for targets named Matrix4Test
+
+# Build rule for target.
+Matrix4Test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Matrix4Test
+.PHONY : Matrix4Test
+
+# fast build rule for target.
+Matrix4Test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4Test.dir/build.make CMakeFiles/Matrix4Test.dir/build
+.PHONY : Matrix4Test/fast
+
 external/glad/src/gl.o: external/glad/src/gl.c.o
 .PHONY : external/glad/src/gl.o
 
@@ -268,6 +281,7 @@ src/Engine/Matrix4.o: src/Engine/Matrix4.cpp.o
 # target to build an object file
 src/Engine/Matrix4.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Matrix4.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4Test.dir/build.make CMakeFiles/Matrix4Test.dir/src/Engine/Matrix4.cpp.o
 .PHONY : src/Engine/Matrix4.cpp.o
 
 src/Engine/Matrix4.i: src/Engine/Matrix4.cpp.i
@@ -276,6 +290,7 @@ src/Engine/Matrix4.i: src/Engine/Matrix4.cpp.i
 # target to preprocess a source file
 src/Engine/Matrix4.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Matrix4.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4Test.dir/build.make CMakeFiles/Matrix4Test.dir/src/Engine/Matrix4.cpp.i
 .PHONY : src/Engine/Matrix4.cpp.i
 
 src/Engine/Matrix4.s: src/Engine/Matrix4.cpp.s
@@ -284,6 +299,7 @@ src/Engine/Matrix4.s: src/Engine/Matrix4.cpp.s
 # target to generate assembly for a file
 src/Engine/Matrix4.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Matrix4.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4Test.dir/build.make CMakeFiles/Matrix4Test.dir/src/Engine/Matrix4.cpp.s
 .PHONY : src/Engine/Matrix4.cpp.s
 
 src/Engine/Rectangle.o: src/Engine/Rectangle.cpp.o
@@ -382,6 +398,30 @@ src/Engine/Transform.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Transform.cpp.s
 .PHONY : src/Engine/Transform.cpp.s
 
+tests/Matrix4Test.o: tests/Matrix4Test.cpp.o
+.PHONY : tests/Matrix4Test.o
+
+# target to build an object file
+tests/Matrix4Test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4Test.dir/build.make CMakeFiles/Matrix4Test.dir/tests/Matrix4Test.cpp.o
+.PHONY : tests/Matrix4Test.cpp.o
+
+tests/Matrix4Test.i: tests/Matrix4Test.cpp.i
+.PHONY : tests/Matrix4Test.i
+
+# target to preprocess a source file
+tests/Matrix4Test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4Test.dir/build.make CMakeFiles/Matrix4Test.dir/tests/Matrix4Test.cpp.i
+.PHONY : tests/Matrix4Test.cpp.i
+
+tests/Matrix4Test.s: tests/Matrix4Test.cpp.s
+.PHONY : tests/Matrix4Test.s
+
+# target to generate assembly for a file
+tests/Matrix4Test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4Test.dir/build.make CMakeFiles/Matrix4Test.dir/tests/Matrix4Test.cpp.s
+.PHONY : tests/Matrix4Test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -390,6 +430,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Matrix4Test"
 	@echo "... Nova2D"
 	@echo "... glad"
 	@echo "... external/glad/src/gl.o"
@@ -422,6 +463,9 @@ help:
 	@echo "... src/Engine/Transform.o"
 	@echo "... src/Engine/Transform.i"
 	@echo "... src/Engine/Transform.s"
+	@echo "... tests/Matrix4Test.o"
+	@echo "... tests/Matrix4Test.i"
+	@echo "... tests/Matrix4Test.s"
 .PHONY : help
 
 
