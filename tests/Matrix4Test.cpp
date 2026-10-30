@@ -146,6 +146,32 @@ void TestCameraProjectionMatrix()
     );
 }
 
+void TestMVPMatrix()
+{
+    Nova::Transform transform;
+    transform.SetPosition(3.0f, 2.0f);
+
+    Nova::Camera camera(16.0f, 9.0f);
+    camera.SetPosition(5.0f, 3.0f);
+
+    const Nova::Matrix4 model = transform.GetModelMatrix();
+    const Nova::Matrix4 view = camera.GetViewMatrix();
+    const Nova::Matrix4 projection = camera.GetProjectionMatrix();
+
+    const Nova::Matrix4 mvp = projection * view * model;
+
+    Nova::Matrix4 expected = Nova::Matrix4::Identity();
+
+    expected(0, 0) = 0.125f;
+    expected(1, 1) = 2.0f / 9.0f;
+    expected(2, 2) = -1.0f;
+
+    expected(0, 3) = -0.25f;
+    expected(1, 3) = -2.0f / 9.0f;
+
+    AssertMatrix(mvp, expected, "MVP Matrix");
+}
+
 int main()
 {
     std::cout << "\n========== Nova2D Math Tests ==========\n\n";
@@ -154,7 +180,8 @@ int main()
     TestModelMatrix();
     TestCameraViewMatrix();
     TestCameraProjectionMatrix();
-    
+    TestMVPMatrix();
+
     std::cout << "\n=======================================\n";
     std::cout << "Tests passed: " << passedTests << '\n';
     std::cout << "Tests failed: " << failedTests << '\n';
