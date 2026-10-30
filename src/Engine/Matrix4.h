@@ -16,8 +16,11 @@ namespace Nova {
 
         Matrix4 operator*(const Matrix4& other) const;
 
+        static Matrix4 Translation(float x, float y, float z);
+        static Matrix4 RotationZ(float degrees);
+        static Matrix4 Scale(float x, float y, float z);
+
     private:
         float m_Data[16];
     };
-
 }
