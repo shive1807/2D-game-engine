@@ -233,6 +233,7 @@ src/Engine/Camera.o: src/Engine/Camera.cpp.o
 # target to build an object file
 src/Engine/Camera.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Camera.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4Test.dir/build.make CMakeFiles/Matrix4Test.dir/src/Engine/Camera.cpp.o
 .PHONY : src/Engine/Camera.cpp.o
 
 src/Engine/Camera.i: src/Engine/Camera.cpp.i
@@ -241,6 +242,7 @@ src/Engine/Camera.i: src/Engine/Camera.cpp.i
 # target to preprocess a source file
 src/Engine/Camera.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Camera.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4Test.dir/build.make CMakeFiles/Matrix4Test.dir/src/Engine/Camera.cpp.i
 .PHONY : src/Engine/Camera.cpp.i
 
 src/Engine/Camera.s: src/Engine/Camera.cpp.s
@@ -249,6 +251,7 @@ src/Engine/Camera.s: src/Engine/Camera.cpp.s
 # target to generate assembly for a file
 src/Engine/Camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Camera.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4Test.dir/build.make CMakeFiles/Matrix4Test.dir/src/Engine/Camera.cpp.s
 .PHONY : src/Engine/Camera.cpp.s
 
 src/Engine/Input.o: src/Engine/Input.cpp.o

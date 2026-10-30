@@ -1,6 +1,7 @@
 
 #include "Matrix4.h"
 #include "Transform.h"
+#include "Camera.h"
 
 #include <cmath>
 #include <iostream>
@@ -104,6 +105,45 @@ namespace
             "Model Matrix"
         );
     }
+
+    void TestCameraViewMatrix()
+    {
+        Nova::Camera camera;
+
+        camera.SetPosition(5.0f, 3.0f);
+
+        const Nova::Matrix4 view = camera.GetViewMatrix();
+
+        Nova::Matrix4 expected = Nova::Matrix4::Identity();
+
+        expected(0, 3) = -5.0f;
+        expected(1, 3) = -3.0f;
+
+        AssertMatrix(
+            view,
+            expected,
+            "Camera View Matrix"
+        );
+    }
+}
+
+void TestCameraProjectionMatrix()
+{
+    Nova::Camera camera(16.0f, 9.0f);
+
+    const Nova::Matrix4 projection = camera.GetProjectionMatrix();
+
+    const Nova::Matrix4 expected = Nova::Matrix4::Orthographic(
+        -8.0f, 8.0f,
+        -4.5f, 4.5f,
+        -1.0f, 1.0f
+    );
+
+    AssertMatrix(
+        projection,
+        expected,
+        "Camera Projection Matrix"
+    );
 }
 
 int main()
@@ -112,7 +152,9 @@ int main()
 
     TestOrthographicMatrix();
     TestModelMatrix();
-
+    TestCameraViewMatrix();
+    TestCameraProjectionMatrix();
+    
     std::cout << "\n=======================================\n";
     std::cout << "Tests passed: " << passedTests << '\n';
     std::cout << "Tests failed: " << failedTests << '\n';

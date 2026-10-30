@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Camera.cpp" "CMakeFiles/Matrix4Test.dir/src/Engine/Camera.cpp.o" "gcc" "CMakeFiles/Matrix4Test.dir/src/Engine/Camera.cpp.o.d"
   "/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Matrix4.cpp" "CMakeFiles/Matrix4Test.dir/src/Engine/Matrix4.cpp.o" "gcc" "CMakeFiles/Matrix4Test.dir/src/Engine/Matrix4.cpp.o.d"
   "/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Transform.cpp" "CMakeFiles/Matrix4Test.dir/src/Engine/Transform.cpp.o" "gcc" "CMakeFiles/Matrix4Test.dir/src/Engine/Transform.cpp.o.d"
   "/Users/shivambhati/Documents/GitHub/2D-game-engine/tests/Matrix4Test.cpp" "CMakeFiles/Matrix4Test.dir/tests/Matrix4Test.cpp.o" "gcc" "CMakeFiles/Matrix4Test.dir/tests/Matrix4Test.cpp.o.d"

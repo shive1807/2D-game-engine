@@ -1015,6 +1015,7 @@ CMakeFiles/Nova2D.dir/main.cpp.o: /Users/shivambhati/Documents/GitHub/2D-game-en
   /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Application.h \
   /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Camera.h \
   /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/EngineTime.h \
+  /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Matrix4.h \
   /opt/homebrew/include/GLFW/glfw3.h
 
 CMakeFiles/Nova2D.dir/src/Engine/Application.cpp.o: /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Application.cpp \
@@ -2042,7 +2043,8 @@ CMakeFiles/Nova2D.dir/src/Engine/Application.cpp.o: /Users/shivambhati/Documents
   /opt/homebrew/include/GLFW/glfw3.h
 
 CMakeFiles/Nova2D.dir/src/Engine/Camera.cpp.o: /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Camera.cpp \
-  /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Camera.h
+  /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Camera.h \
+  /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Matrix4.h
 
 CMakeFiles/Nova2D.dir/src/Engine/Input.cpp.o: /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Input.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/OpenGLAvailability.h \
@@ -3354,13 +3356,13 @@ CMakeFiles/Nova2D.dir/src/Engine/Transform.cpp.o: /Users/shivambhati/Documents/G
 
 /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Renderer.h:
 
-/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Matrix4.h:
-
 /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Input.h:
 
 /Users/shivambhati/Documents/GitHub/2D-game-engine/external/glad/include/glad/gl.h:
 
 /opt/homebrew/include/GLFW/glfw3.h:
+
+/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Matrix4.h:
 
 /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Camera.h:
 

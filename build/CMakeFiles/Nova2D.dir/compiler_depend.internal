@@ -1016,6 +1016,7 @@ CMakeFiles/Nova2D.dir/main.cpp.o
  /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Application.h
  /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Camera.h
  /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/EngineTime.h
+ /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Matrix4.h
  /opt/homebrew/include/GLFW/glfw3.h
 
 CMakeFiles/Nova2D.dir/src/Engine/Application.cpp.o
@@ -2046,6 +2047,7 @@ CMakeFiles/Nova2D.dir/src/Engine/Application.cpp.o
 CMakeFiles/Nova2D.dir/src/Engine/Camera.cpp.o
  /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Camera.cpp
  /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Camera.h
+ /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Matrix4.h
 
 CMakeFiles/Nova2D.dir/src/Engine/Input.cpp.o
  /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Input.cpp

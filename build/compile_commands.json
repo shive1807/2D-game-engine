@@ -76,5 +76,11 @@
   "command": "/usr/bin/c++  -I/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine -std=c++20 -arch arm64 -o CMakeFiles/Matrix4Test.dir/src/Engine/Transform.cpp.o -c /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Transform.cpp",
   "file": "/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Transform.cpp",
   "output": "CMakeFiles/Matrix4Test.dir/src/Engine/Transform.cpp.o"
+},
+{
+  "directory": "/Users/shivambhati/Documents/GitHub/2D-game-engine/build",
+  "command": "/usr/bin/c++  -I/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine -std=c++20 -arch arm64 -o CMakeFiles/Matrix4Test.dir/src/Engine/Camera.cpp.o -c /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Camera.cpp",
+  "file": "/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Camera.cpp",
+  "output": "CMakeFiles/Matrix4Test.dir/src/Engine/Camera.cpp.o"
 }
 ]

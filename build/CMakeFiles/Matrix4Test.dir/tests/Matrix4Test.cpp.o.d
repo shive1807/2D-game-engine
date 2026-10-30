@@ -2,6 +2,7 @@ CMakeFiles/Matrix4Test.dir/tests/Matrix4Test.cpp.o: \
   /Users/shivambhati/Documents/GitHub/2D-game-engine/tests/Matrix4Test.cpp \
   /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Matrix4.h \
   /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Transform.h \
+  /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Camera.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cmath \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \

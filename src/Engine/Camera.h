@@ -1,4 +1,6 @@
 #pragma once
+#include "Matrix4.h"
+
 namespace Nova{
     class Camera{
         public:
@@ -12,6 +14,9 @@ namespace Nova{
         float GetViewWidth() const;
         float GetViewHeight() const;
 
+        Matrix4 GetViewMatrix() const;
+        Matrix4 GetProjectionMatrix() const;
+        
         private:
         float m_PositionX = 0.0f;
         float m_PositionY = 0.0f;

@@ -45,4 +45,27 @@ namespace Nova {
         return m_ViewHeight;
     }
 
+    Matrix4 Camera::GetViewMatrix() const
+    {
+        return Matrix4::Translation(
+            -m_PositionX,
+            -m_PositionY,
+            0.0f
+        );
+    }
+
+    Matrix4 Camera::GetProjectionMatrix() const
+    {
+        const float halfWidth = m_ViewWidth * 0.5f;
+        const float halfHeight = m_ViewHeight * 0.5f;
+
+        return Matrix4::Orthographic(
+            -halfWidth,
+            halfWidth,
+            -halfHeight,
+            halfHeight,
+            -1.0f,
+            1.0f
+        );
+    }
 }
