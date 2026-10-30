@@ -57,9 +57,8 @@ namespace Nova {
 
         Matrix4 result = Identity();
 
-        result(0,0) = c;
-        result(0, -1) = s;
-
+        result(0, 0) = c;
+        result(0, 1) = -s;
         result(1, 0) = s;
         result(1, 1) = c;
 

@@ -91,7 +91,7 @@ clean: CMakeFiles/Matrix4Test.dir/clean
 CMakeFiles/glad.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shivambhati/Documents/GitHub/2D-game-engine/build/CMakeFiles --progress-num=14,15 "Built target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shivambhati/Documents/GitHub/2D-game-engine/build/CMakeFiles --progress-num=15,16 "Built target glad"
 .PHONY : CMakeFiles/glad.dir/all
 
 # Build rule for subdir invocation for target.
@@ -108,7 +108,7 @@ glad: CMakeFiles/glad.dir/rule
 # codegen rule for target.
 CMakeFiles/glad.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shivambhati/Documents/GitHub/2D-game-engine/build/CMakeFiles --progress-num=14,15 "Finished codegen for target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shivambhati/Documents/GitHub/2D-game-engine/build/CMakeFiles --progress-num=15,16 "Finished codegen for target glad"
 .PHONY : CMakeFiles/glad.dir/codegen
 
 # clean rule for target.
@@ -123,7 +123,7 @@ CMakeFiles/glad.dir/clean:
 CMakeFiles/Nova2D.dir/all: CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shivambhati/Documents/GitHub/2D-game-engine/build/CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13 "Built target Nova2D"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shivambhati/Documents/GitHub/2D-game-engine/build/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14 "Built target Nova2D"
 .PHONY : CMakeFiles/Nova2D.dir/all
 
 # Build rule for subdir invocation for target.
@@ -140,7 +140,7 @@ Nova2D: CMakeFiles/Nova2D.dir/rule
 # codegen rule for target.
 CMakeFiles/Nova2D.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shivambhati/Documents/GitHub/2D-game-engine/build/CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13 "Finished codegen for target Nova2D"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shivambhati/Documents/GitHub/2D-game-engine/build/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14 "Finished codegen for target Nova2D"
 .PHONY : CMakeFiles/Nova2D.dir/codegen
 
 # clean rule for target.
@@ -155,12 +155,12 @@ CMakeFiles/Nova2D.dir/clean:
 CMakeFiles/Matrix4Test.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4Test.dir/build.make CMakeFiles/Matrix4Test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4Test.dir/build.make CMakeFiles/Matrix4Test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shivambhati/Documents/GitHub/2D-game-engine/build/CMakeFiles --progress-num=1,2,3 "Built target Matrix4Test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shivambhati/Documents/GitHub/2D-game-engine/build/CMakeFiles --progress-num=1,2,3,4 "Built target Matrix4Test"
 .PHONY : CMakeFiles/Matrix4Test.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Matrix4Test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shivambhati/Documents/GitHub/2D-game-engine/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shivambhati/Documents/GitHub/2D-game-engine/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Matrix4Test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shivambhati/Documents/GitHub/2D-game-engine/build/CMakeFiles 0
 .PHONY : CMakeFiles/Matrix4Test.dir/rule
@@ -172,7 +172,7 @@ Matrix4Test: CMakeFiles/Matrix4Test.dir/rule
 # codegen rule for target.
 CMakeFiles/Matrix4Test.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4Test.dir/build.make CMakeFiles/Matrix4Test.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shivambhati/Documents/GitHub/2D-game-engine/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target Matrix4Test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shivambhati/Documents/GitHub/2D-game-engine/build/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target Matrix4Test"
 .PHONY : CMakeFiles/Matrix4Test.dir/codegen
 
 # clean rule for target.

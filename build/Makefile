@@ -380,6 +380,7 @@ src/Engine/Transform.o: src/Engine/Transform.cpp.o
 # target to build an object file
 src/Engine/Transform.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Transform.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4Test.dir/build.make CMakeFiles/Matrix4Test.dir/src/Engine/Transform.cpp.o
 .PHONY : src/Engine/Transform.cpp.o
 
 src/Engine/Transform.i: src/Engine/Transform.cpp.i
@@ -388,6 +389,7 @@ src/Engine/Transform.i: src/Engine/Transform.cpp.i
 # target to preprocess a source file
 src/Engine/Transform.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Transform.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4Test.dir/build.make CMakeFiles/Matrix4Test.dir/src/Engine/Transform.cpp.i
 .PHONY : src/Engine/Transform.cpp.i
 
 src/Engine/Transform.s: src/Engine/Transform.cpp.s
@@ -396,6 +398,7 @@ src/Engine/Transform.s: src/Engine/Transform.cpp.s
 # target to generate assembly for a file
 src/Engine/Transform.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Transform.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4Test.dir/build.make CMakeFiles/Matrix4Test.dir/src/Engine/Transform.cpp.s
 .PHONY : src/Engine/Transform.cpp.s
 
 tests/Matrix4Test.o: tests/Matrix4Test.cpp.o

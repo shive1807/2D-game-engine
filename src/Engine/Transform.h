@@ -1,4 +1,5 @@
 #pragma once
+#include "Matrix4.h"
 
 namespace Nova{
     class Transform{
@@ -14,6 +15,8 @@ namespace Nova{
         float GetRotation() const;
         float GetScaleX() const;
         float GetScaleY() const;
+
+        Matrix4 GetModelMatrix() const;
 
         private:
         float m_PositionX = 0.0f;
