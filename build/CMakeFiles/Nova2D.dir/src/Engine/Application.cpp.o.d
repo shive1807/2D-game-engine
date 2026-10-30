@@ -1011,6 +1011,7 @@ CMakeFiles/Nova2D.dir/src/Engine/Application.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/from_chars_result.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/from_chars_integral.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars.h \
+  /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Camera.h \
   /opt/homebrew/include/GLFW/glfw3.h \
   /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Input.h \
   /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Renderer.h \

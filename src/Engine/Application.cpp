@@ -50,6 +50,7 @@ namespace Nova{
         //Input system
         Input::Initialize(m_window);
 
+        m_Camera.SetPosition(0.5f, 0.0f);
         std::cout << "Nova2D initialized successfully!\n";
         return true;
     }
@@ -94,25 +95,25 @@ namespace Nova{
         //game logic will go here
     }
 
-    // void Application::Render(){
+    void Application::Render(){
+        Renderer::Clear(0.10f, 0.10f, 0.15f, 1.0f);
+        if (m_Rectangle != nullptr){
+            m_Rectangle->Draw(m_Camera);
+        }
+    }
+
+    // void Application::Render()
+    // {
     //     Renderer::Clear(0.10f, 0.10f, 0.15f, 1.0f);
-    //     if (m_Rectangle != nullptr){
+
+    //     glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
+    //     glClear(GL_COLOR_BUFFER_BIT);
+
+    //     if (m_Rectangle != nullptr)
+    //     {
     //         m_Rectangle->Draw();
     //     }
     // }
-
-    void Application::Render()
-    {
-        Renderer::Clear(0.10f, 0.10f, 0.15f, 1.0f);
-
-        glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
-
-        if (m_Rectangle != nullptr)
-        {
-            m_Rectangle->Draw();
-        }
-    }
 
     void Application::Shutdown(){
         if(m_window != nullptr){

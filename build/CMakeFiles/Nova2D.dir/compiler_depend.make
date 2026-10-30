@@ -1013,6 +1013,7 @@ CMakeFiles/Nova2D.dir/main.cpp.o: /Users/shivambhati/Documents/GitHub/2D-game-en
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/stdint.h \
   /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Application.h \
+  /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Camera.h \
   /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/EngineTime.h \
   /opt/homebrew/include/GLFW/glfw3.h
 
@@ -2030,12 +2031,17 @@ CMakeFiles/Nova2D.dir/src/Engine/Application.cpp.o: /Users/shivambhati/Documents
   /Users/shivambhati/Documents/GitHub/2D-game-engine/external/glad/include/KHR/khrplatform.h \
   /Users/shivambhati/Documents/GitHub/2D-game-engine/external/glad/include/glad/gl.h \
   /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Application.h \
+  /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Camera.h \
   /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/EngineTime.h \
   /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Input.h \
   /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Rectangle.h \
   /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Renderer.h \
   /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Shader.h \
+  /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Transform.h \
   /opt/homebrew/include/GLFW/glfw3.h
+
+CMakeFiles/Nova2D.dir/src/Engine/Camera.cpp.o: /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Camera.cpp \
+  /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Camera.h
 
 CMakeFiles/Nova2D.dir/src/Engine/Input.cpp.o: /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Input.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/OpenGLAvailability.h \
@@ -3071,8 +3077,10 @@ CMakeFiles/Nova2D.dir/src/Engine/Rectangle.cpp.o: /Users/shivambhati/Documents/G
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/stdint.h \
   /Users/shivambhati/Documents/GitHub/2D-game-engine/external/glad/include/KHR/khrplatform.h \
   /Users/shivambhati/Documents/GitHub/2D-game-engine/external/glad/include/glad/gl.h \
+  /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Camera.h \
   /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Rectangle.h \
-  /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Shader.h
+  /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Shader.h \
+  /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Transform.h
 
 CMakeFiles/Nova2D.dir/src/Engine/Renderer.cpp.o: /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Renderer.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_types/_intmax_t.h \
@@ -4105,6 +4113,11 @@ CMakeFiles/Nova2D.dir/src/Engine/Shader.cpp.o: /Users/shivambhati/Documents/GitH
   /Users/shivambhati/Documents/GitHub/2D-game-engine/external/glad/include/glad/gl.h \
   /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Shader.h
 
+CMakeFiles/Nova2D.dir/src/Engine/Transform.cpp.o: /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Transform.cpp \
+  /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Transform.h
+
+
+/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Transform.cpp:
 
 /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Renderer.cpp:
 
@@ -4116,6 +4129,8 @@ CMakeFiles/Nova2D.dir/src/Engine/Shader.cpp.o: /Users/shivambhati/Documents/GitH
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/OpenGLAvailability.h:
 
+/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Transform.h:
+
 /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Renderer.h:
 
 /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Input.h:
@@ -4123,6 +4138,8 @@ CMakeFiles/Nova2D.dir/src/Engine/Shader.cpp.o: /Users/shivambhati/Documents/GitH
 /Users/shivambhati/Documents/GitHub/2D-game-engine/external/glad/include/glad/gl.h:
 
 /opt/homebrew/include/GLFW/glfw3.h:
+
+/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Camera.h:
 
 /Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Application.h:
 
@@ -5617,6 +5634,8 @@ CMakeFiles/Nova2D.dir/src/Engine/Shader.cpp.o: /Users/shivambhati/Documents/GitH
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/functional:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_unique.h:
+
+/Users/shivambhati/Documents/GitHub/2D-game-engine/src/Engine/Camera.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/tuple.h:
 

@@ -214,6 +214,30 @@ src/Engine/Application.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Application.cpp.s
 .PHONY : src/Engine/Application.cpp.s
 
+src/Engine/Camera.o: src/Engine/Camera.cpp.o
+.PHONY : src/Engine/Camera.o
+
+# target to build an object file
+src/Engine/Camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Camera.cpp.o
+.PHONY : src/Engine/Camera.cpp.o
+
+src/Engine/Camera.i: src/Engine/Camera.cpp.i
+.PHONY : src/Engine/Camera.i
+
+# target to preprocess a source file
+src/Engine/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Camera.cpp.i
+.PHONY : src/Engine/Camera.cpp.i
+
+src/Engine/Camera.s: src/Engine/Camera.cpp.s
+.PHONY : src/Engine/Camera.s
+
+# target to generate assembly for a file
+src/Engine/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Camera.cpp.s
+.PHONY : src/Engine/Camera.cpp.s
+
 src/Engine/Input.o: src/Engine/Input.cpp.o
 .PHONY : src/Engine/Input.o
 
@@ -353,6 +377,9 @@ help:
 	@echo "... src/Engine/Application.o"
 	@echo "... src/Engine/Application.i"
 	@echo "... src/Engine/Application.s"
+	@echo "... src/Engine/Camera.o"
+	@echo "... src/Engine/Camera.i"
+	@echo "... src/Engine/Camera.s"
 	@echo "... src/Engine/Input.o"
 	@echo "... src/Engine/Input.i"
 	@echo "... src/Engine/Input.s"

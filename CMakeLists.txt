@@ -32,6 +32,7 @@ add_executable(Nova2D
     src/Engine/Shader.cpp
     src/Engine/Rectangle.cpp
     src/Engine/Transform.cpp
+    src/Engine/Camera.cpp
 )
 
 target_include_directories(Nova2D PRIVATE

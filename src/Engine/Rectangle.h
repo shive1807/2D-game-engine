@@ -3,6 +3,8 @@
 #include "Shader.h"
 
 namespace Nova{
+    class Camera;
+
     class Rectangle{
         public:
         Rectangle();
@@ -11,7 +13,7 @@ namespace Nova{
         Rectangle(const Rectangle&) = delete;
         Rectangle& operator=(const Rectangle&) = delete;
 
-        void Draw() const;
+        void Draw(const Camera& camera) const;
 
         void SetPosition(float x, float y);
         void SetRotation(float degrees);

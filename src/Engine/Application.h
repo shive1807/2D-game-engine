@@ -1,5 +1,6 @@
 #pragma once
 #include "EngineTime.h"
+#include "Camera.h"
 #define GLFW_INCLUDE_NONE
 #include <GLFW/glfw3.h>
 
@@ -25,5 +26,7 @@ namespace Nova
         EngineTime m_Time;
 
         Rectangle* m_Rectangle = nullptr;
+
+        Camera m_Camera;
     };
 }
