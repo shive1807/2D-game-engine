@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Nova2D.dir/src/Engine/Camera.cpp.o.d"
   "CMakeFiles/Nova2D.dir/src/Engine/Input.cpp.o"
   "CMakeFiles/Nova2D.dir/src/Engine/Input.cpp.o.d"
+  "CMakeFiles/Nova2D.dir/src/Engine/Matrix4.cpp.o"
+  "CMakeFiles/Nova2D.dir/src/Engine/Matrix4.cpp.o.d"
   "CMakeFiles/Nova2D.dir/src/Engine/Rectangle.cpp.o"
   "CMakeFiles/Nova2D.dir/src/Engine/Rectangle.cpp.o.d"
   "CMakeFiles/Nova2D.dir/src/Engine/Renderer.cpp.o"

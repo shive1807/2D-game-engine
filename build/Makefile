@@ -262,6 +262,30 @@ src/Engine/Input.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Input.cpp.s
 .PHONY : src/Engine/Input.cpp.s
 
+src/Engine/Matrix4.o: src/Engine/Matrix4.cpp.o
+.PHONY : src/Engine/Matrix4.o
+
+# target to build an object file
+src/Engine/Matrix4.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Matrix4.cpp.o
+.PHONY : src/Engine/Matrix4.cpp.o
+
+src/Engine/Matrix4.i: src/Engine/Matrix4.cpp.i
+.PHONY : src/Engine/Matrix4.i
+
+# target to preprocess a source file
+src/Engine/Matrix4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Matrix4.cpp.i
+.PHONY : src/Engine/Matrix4.cpp.i
+
+src/Engine/Matrix4.s: src/Engine/Matrix4.cpp.s
+.PHONY : src/Engine/Matrix4.s
+
+# target to generate assembly for a file
+src/Engine/Matrix4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Nova2D.dir/build.make CMakeFiles/Nova2D.dir/src/Engine/Matrix4.cpp.s
+.PHONY : src/Engine/Matrix4.cpp.s
+
 src/Engine/Rectangle.o: src/Engine/Rectangle.cpp.o
 .PHONY : src/Engine/Rectangle.o
 
@@ -383,6 +407,9 @@ help:
 	@echo "... src/Engine/Input.o"
 	@echo "... src/Engine/Input.i"
 	@echo "... src/Engine/Input.s"
+	@echo "... src/Engine/Matrix4.o"
+	@echo "... src/Engine/Matrix4.i"
+	@echo "... src/Engine/Matrix4.s"
 	@echo "... src/Engine/Rectangle.o"
 	@echo "... src/Engine/Rectangle.i"
 	@echo "... src/Engine/Rectangle.s"

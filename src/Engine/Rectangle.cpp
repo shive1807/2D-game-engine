@@ -179,5 +179,4 @@ namespace Nova {
     void Rectangle::SetScale(float x, float y) {
         m_Transform.SetScale(x, y);
     }
-
 }
