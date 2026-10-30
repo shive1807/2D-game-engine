@@ -1,6 +1,8 @@
 #include "Rectangle.h"
 #include "Camera.h"
+#include "Matrix4.h"
 #include <glad/gl.h>
+#include <iostream>
 
 namespace Nova {
 
@@ -8,39 +10,12 @@ namespace Nova {
         const char* vertexSource = R"(#version 330 core
             layout (location = 0) in vec2 a_Position;
 
-            uniform vec2 u_Position;
-            uniform float u_Rotation;
-            uniform vec2 u_Scale;
-
-            uniform vec2 u_CameraPosition;
-            uniform vec2 u_ViewSize;
+            uniform mat4 u_MVP;
 
             void main()
             {
-                // Apply object scale.
-                vec2 scaledPosition = a_Position * u_Scale;
-
-                // Apply object rotation.
-                float c = cos(radians(u_Rotation));
-                float s = sin(radians(u_Rotation));
-
-                mat2 rotation = mat2(
-                    c, s,
-                    -s, c
-                );
-
-                vec2 rotatedPosition = rotation * scaledPosition;
-
-                // Convert local position to world position.
-                vec2 worldPosition = rotatedPosition + u_Position;
-
-                // Convert world position to camera-relative position.
-                vec2 cameraPosition = worldPosition - u_CameraPosition;
-
-                // Convert camera-relative coordinates to clip space.
-                vec2 clipPosition = cameraPosition * (2.0 / u_ViewSize);
-
-                gl_Position = vec4(clipPosition, 0.0, 1.0);
+                vec4 position = vec4(a_Position, 0.0, 1.0);
+                gl_Position = u_MVP * position;
             }
         )";
 
@@ -111,53 +86,18 @@ namespace Nova {
     void Rectangle::Draw(const Camera& camera) const {
         m_Shader->Bind();
 
-        const GLint program =
-            static_cast<GLint>(m_Shader->GetRendererID());
+        const Matrix4 model = m_Transform.GetModelMatrix();
+        const Matrix4 view = camera.GetViewMatrix();
+        const Matrix4 projection = camera.GetProjectionMatrix();
+        const Matrix4 mvp = projection * view * model;
 
-        // Object transform uniforms.
-        const GLint positionLocation =
-            glGetUniformLocation(program, "u_Position");
-
-        const GLint rotationLocation =
-            glGetUniformLocation(program, "u_Rotation");
-
-        const GLint scaleLocation =
-            glGetUniformLocation(program, "u_Scale");
-
-        glUniform2f(
-            positionLocation,
-            m_Transform.GetPositionX(),
-            m_Transform.GetPositionY()
-        );
-
-        glUniform1f(
-            rotationLocation,
-            m_Transform.GetRotation()
-        );
-
-        glUniform2f(
-            scaleLocation,
-            m_Transform.GetScaleX(),
-            m_Transform.GetScaleY()
-        );
-
-        // Camera uniforms.
-        const GLint cameraPositionLocation =
-            glGetUniformLocation(program, "u_CameraPosition");
-
-        const GLint viewSizeLocation =
-            glGetUniformLocation(program, "u_ViewSize");
-
-        glUniform2f(
-            cameraPositionLocation,
-            camera.GetPositionX(),
-            camera.GetPositionY()
-        );
-
-        glUniform2f(
-            viewSizeLocation,
-            camera.GetViewWidth(),
-            camera.GetViewHeight()
+        const GLint program = static_cast<GLint>(m_Shader->GetRendererID());
+        const GLint mvpLocation = glGetUniformLocation(program, "u_MVP");
+        glUniformMatrix4fv(
+            mvpLocation,
+            1,
+            GL_FALSE,
+            mvp.Data()
         );
 
         // Draw the rectangle.
